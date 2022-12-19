@@ -43,7 +43,7 @@ section{
 	padding: 3px 40px;
 	font-family: "Arial", sans-serif;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 1.3rem;
 }
 .chicken .title {
 	background-color: rgba(255,0,0,.4);
@@ -59,4 +59,5 @@ section{
 	padding: 10px;
 	font-family: "Georgia", sans-serif;
 	text-align: justify;
+	font-size: 1rem;
 }
