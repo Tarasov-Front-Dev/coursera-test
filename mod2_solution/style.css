@@ -1,21 +1,18 @@
-
 @media (min-width: 992px){
-	body>div{
+	body>div.container{
 		float: left;
 		width: 33.33%;
 	}
 }
 @media (min-width: 768px) and (max-width: 991px){
-	body>div{
+	body>div.container{
 		float: left;
 		width: 50%;
 	}
-	body>div:last-of-type{
+	body>div.container:last-of-type:nth-child(even){
 		clear: left;
 		width: 100%;
 	}
-}
-@media (max-width: 767px){
 }
 
 * {
@@ -57,7 +54,7 @@ section{
 .sushi .title {
 	background-color: rgba(0,0,255,.4);
 }
-.container>section>div{
+.container>section>p{
 	clear: both;
 	padding: 10px;
 	font-family: "Georgia", sans-serif;
