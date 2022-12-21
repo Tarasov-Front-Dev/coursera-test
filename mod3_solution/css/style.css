@@ -1,0 +1,9 @@
+body{
+	padding: 40px;
+}
+div[class^=col]{
+	height: 70px;
+	background-color: #edf9f7;
+	border: 1px solid #adb5bd;
+	padding: 1.2em;
+}
