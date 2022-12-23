@@ -20,3 +20,9 @@ div[class^=col]{
 		background-color: violet;
 	}
 }
+
+@include media-breakpoint-up(lg) {
+ 	#col {
+    background-color: lightgreen;
+  }
+}
