@@ -1,9 +1,26 @@
 body{
-	padding: 40px;
+	border: 1px dashed red;
+}
+.container{
+	border: 1px solid blue;
+}
+.row{
+	border: 1px solid violet;
 }
 div[class^=col]{
-	height: 70px;
-	background-color: #edf9f7;
-	border: 1px solid #adb5bd;
-	padding: 1.2em;
+	border: 1px solid #000;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+	.col{
+		background-color: violet;
+	}
+}
+@include media-breakpoint-up(lg) {
+  .col {
+    background-color: green;
+  }
 }
