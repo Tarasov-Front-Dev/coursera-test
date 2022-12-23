@@ -15,11 +15,6 @@ div[class^=col]{
 	font-size: 1.5em;
 
 }
-@media (min-width: 768px) and (max-width: 991.98px){
-	div[class^=col]{
-		background-color: violet;
-	}
-}
 
 @include media-breakpoint-up(lg) {
  	#col {
