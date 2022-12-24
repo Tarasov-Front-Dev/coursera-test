@@ -1,30 +1,37 @@
-body{
+/*body{
 	border: 1px dashed red;
 }
 .container{
 	border: 1px solid blue;
+	padding-top: 1.5rem;
+	padding-bottom: .5rem;
 }
 .row{
 	border: 1px solid violet;
-	min-height: 10rem;
+/*	min-height: 20rem;*/
 }
 div[class^=col]{
 	border: 1px solid #000;
-	padding-top: 0.75rem;
-	padding-bottom: 0.75rem;
+	/*padding-top: 0.75rem;
+	padding-bottom: 0.75rem;*/
 	font-weight: bold;
 	font-size: 1.5rem;
 
 }
 @media (min-width: 768px) and (max-width: 991.98px){
 	div[class^=col]{
-		background-color: violet;
+/*		background-color: violet;*/
 	}
 }
-img{
-	width: 24.99%;
-	height: auto;
+.clearfix img{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 10px;
+}
+@media (max-width: 767.98px){
+	.clearfix img{
+	width: 100%;
+	}
 }
 p{
 	text-align: justify;
-}
+}*/
