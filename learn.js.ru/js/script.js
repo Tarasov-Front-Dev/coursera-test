@@ -1,9 +1,11 @@
+// "use strict"
+
 // let name = 'Jone',
 // 		admin = name;
 // console.log(admin);
 
 
-///////////////////////////////////////
+// ///////////////////////////////////////
 
 
 // let ourPlanetName = 'Earth';
