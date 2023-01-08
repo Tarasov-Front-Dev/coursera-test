@@ -1,8 +1,17 @@
 "use strict";
 
-let height = null;
-let width = null;
+// let ask = (question, yes, no) => confirm(question) ? yes() : no();
 
-let area = (height ?? 100) * (width ?? 50);
+// ask(
+// 	"Will you play with me?",
+// 	function() {console.log("Go and play together!");},
+// 	function() {console.log("Why you don't wanna play with me?");}
+// );
 
-console.log(area);
+let question = prompt("What's your question?");
+
+let ask = (confirm(question)) ?
+	() => console.log("I'm happy you agreed!") :
+	() => console.log("Sadly you declined.");
+
+ask();
