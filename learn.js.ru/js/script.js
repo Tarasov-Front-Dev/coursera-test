@@ -114,28 +114,26 @@
 // console.log( null || 2 && 3 || 4 ); // 3
 
 
-// let getUserName = prompt("Login?", "");
-// let getPassword;
+let getUserName = prompt("Login?", "");
+let getPassword;
 
-// if (getUserName === "admin") {
+if (getUserName === "admin") {
 
-// 	getPassword = (prompt("Password?", ""));
+	getPassword = (prompt("Password?", ""));
 
-// 	if (getPassword === "boss") {
-// 		console.log(`Hello ${getUserName}!`);
-// 	} else if (getPassword === null || getPassword === "") {
-// 		console.log("Aborted");
-// 	} else {
-// 		console.log("Wrong password");
-// 	}
+	if (getPassword === "boss") {
+		console.log(`Hello ${getUserName}!`);
+	} else if (getPassword === null || getPassword === "") {
+		console.log("Aborted");
+	} else {
+		console.log("Wrong password");
+	}
 	
-// } else if (getUserName === null || getUserName === "") {
-// 	console.log("Aborted");
-// 	} else {
-// 		console.log("Wrong login");
-// }
-
-// alert( alert(1) && alert(2) ); // 1 and then undefined
+} else if (getUserName === null || getUserName === "") {
+	console.log("Aborted");
+	} else {
+		console.log("Wrong login");
+}
 
 
 // /************Ternary operator************/
