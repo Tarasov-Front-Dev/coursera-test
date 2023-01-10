@@ -109,7 +109,7 @@
 // console.log(a + " - is a " + typeof(a));
 
 
-/************Logical operators************/
+// /************Logical operators************/
 // console.log( console.log(1) && console.log(2) ); // 1 and then undefined
 // console.log( null || 2 && 3 || 4 ); // 3
 
@@ -137,12 +137,12 @@
 
 
 // /************Nullish coalescing operator************/
-let height = null;
-let width = null;
+// let height = null;
+// let width = null;
 
-let area = (height ?? 100) * (width ?? 50); // It's important to use brakets
+// let area = (height ?? 100) * (width ?? 50); // It's important to use brakets
 
-console.log(area); // 5000
+// console.log(area); // 5000
 
 
 // /************Ternary operator************/
@@ -159,7 +159,7 @@ console.log(area); // 5000
 // console.log(`I've got your number! It's ${getNumber}`);
 
 
-// /************Loop "If Else************/
+// /************Loop If-else************/
 
 // let year = prompt('What year is ECMAScript-2015?', '');
 
@@ -170,3 +170,32 @@ console.log(area); // 5000
 // } else {
 //   console.log( 'Bingo!' );
 // }
+
+
+// /*********Loop While, If, For + continue/break*********/
+let sum = 0;
+
+while (true) {
+	let value = prompt("Type a number to summ. Push 'Cancel' to stop", "");
+	if (value === null) break;
+	if (value === undefined || isNaN(value) || value === ""){
+		alert(`"${value}" is not a number! Try again.`);
+		continue;
+	};
+	sum += +value;
+}
+console.log(`Your sum is ${sum}.`);
+
+// /*********GetPrimes*********/
+
+let maxPrime = prompt("Set max number to prime", "");
+console.log("Here is all primes toward " + maxPrime + ":");
+
+label: for (let i = 2; i < maxPrime; i++){
+	for (let j = 2; j < i; j++){
+		if (i % j === 0) {
+			continue label;
+		}
+	}
+	console.log(i);
+}
