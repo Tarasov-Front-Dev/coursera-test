@@ -222,15 +222,21 @@
 
 // /*********Functions*********/
 
+// function checkAge(age) {
+// 	if (age >= 18) {
+// 		return true;
+// 	} else {
+// 		return confirm("Ask parents");
+// 	}
+// }
+
+// /***Or like this***/
 function checkAge(age) {
-	if (age >= 18) {
-		return true;
-	} else {
-		return confirm("Ask parents");
-	}
+	return (age >= 18 || confirm("Ask parents"));
 }
 
 let age = +prompt("What's your age?", "");
+
 if (checkAge(age)) {
 	console.log("Access granted!");
 } else {
@@ -241,7 +247,7 @@ if (checkAge(age)) {
 // /*********isPrime by functions*********/
 
 function showPrimes(n) {
-	for (let i = 2; i < n; i++){ // count all numbers towards n
+	for (let i = 2; i < n; i++){ // count all numbers towards maxPrime
 		if (!isPrime(i)) continue;
 		console.log(i); // isPrime
 	}
