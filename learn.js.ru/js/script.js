@@ -1,41 +1,41 @@
-// "use strict"
+"use strict"
+
+// /************Hello World************/
+
+// alert("Hello World!");
+
+
+// /************First variables************/
 
 // let name = 'Jone',
 // 		admin = name;
-// console.log(admin);
+// console.log(`Hello, ${admin}!`);
 
 
-// ///////////////////////////////////////
+// /************Typeof************/
+
+// console.log(typeof "foo"); // String
+// console.log(typeof 0); // Number
+// console.log(typeof 10n); // Bigint
+// console.log(1/0); // Infinity
+// console.log(-1/0); // -Infinity
+// console.log(+"123z"); // NaN
+// console.log(typeof true); // Boolean
+// console.log(typeof Symbol("id")); // Symbol
+// console.log(typeof null); //object (is a mistake of JS)
+// console.log(typeof undefined); // undefined
+// console.log(typeof console); // object
+// console.log(typeof console.log); // function (method)
 
 
-// let ourPlanetName = 'Earth';
-// let currentUserName = 'Jone';
-
-// console.log(1/0);
-
-// let str = "Привет! Я переменная str!";
-// let str2 = 'Одинарные кавычки тоже подойдут';
-// let phrase = `Обратные кавычки позволяют встраивать переменные. Например, ${str}`;
-// console.log(phrase);
-
-// console.log(typeof undefined);
-
-// name = "Ilya";
-// console.log( `hello ${1}!` ); // ?
-// console.log( `hello ${"name"}!` ); // ?
-// console.log( `hello ${name}!` ); // ?
-
-
-///////////////////////////////////////
-
+// /************Modals************/
 
 // //Модальное окно с вопросом и полем для ввода текста
 // let age = prompt("What's your age?", 'Type here your age, pls');
-
 // console.log(`You are ${age} ages old!`)
 
 
-// //Модальное окно с вопросом
+// //Модальное окно с вопросом + модальное окно с сообщением
 // let isMan = confirm('Are you the man?');
 // if (isMan == true){
 // 	alert('You are the man!');
@@ -44,43 +44,48 @@
 // };
 
 
-///////////////////////////////////////
+// /************Minimize code************/
 
+// /***Get userName and console it***/
 
-// //Спросить имя пользователя и сообщить его в консоль
 // let askUserName = prompt("What's your name?", '');
 // console.log(`Your name is ${askUserName}!`);
 
-// //Упрощенное решение предыдущего алгоритма
+// /***Minimize code***/
+
 // console.log(`Your name is ${prompt("What's your name, man?")}!`);
-// //Or like this
+
+// /***Concatenation***/
 // console.log("Nice to meet you " + prompt("What's your name, dear cousin?", '') + "!");
 
 
-///////////////////////////////////////
+// /************Variables types************/
 
+let a = 1;
+console.log(typeof Boolean(a)); // toBoolean
+console.log(typeof !!a); // toBoolean
 
-// let value = true;
-// console.log(typeof value);
+let value = String(a);
+console.log(typeof value); // String
 
-// value = String(value);
-// console.log(typeof value);
+let str3 = "123";
+console.log(str3 + " - " + typeof str3); // String
 
-// let str3 = "123";
-// console.log("${str3} - " + typeof str3);
+let str4 = Number(str3);
+console.log(str4 + " - " + typeof str4); // Number
 
-// str4 = Number(str3);
-// console.log(str4 + " - " + typeof str4);
+let apples = "2";
+let oranges = "5";
 
-// let apples = "2";
-// let oranges = "5";
+console.log(+apples + +oranges); // toNumber
+console.log(Number(apples) + Number(oranges));
 
-// console.log(+apples + +oranges);
-// console.log(Number(apples) + Number(oranges));
+let counter = 3;
+console.log(counter++); // postfix increment
+console.log(counter);
 
-// let counter = 0;
-// console.log(counter++);
-// console.log(counter);
+console.log(--counter); // postfix decrement
+console.log(counter);
 
 
 ///////////////////////////////////////
