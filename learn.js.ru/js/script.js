@@ -61,38 +61,37 @@
 
 // /************Variables types************/
 
-let a = 1;
-console.log(typeof Boolean(a)); // toBoolean
-console.log(typeof !!a); // toBoolean
+// let a = 1;
+// console.log(typeof Boolean(a)); // toBoolean
+// console.log(typeof !!a); // toBoolean
 
-let value = String(a);
-console.log(typeof value); // String
+// let value = String(a);
+// console.log(typeof value); // String
 
-let str3 = "123";
-console.log(str3 + " - " + typeof str3); // String
+// let str3 = "123";
+// console.log(str3 + " - " + typeof str3); // String
 
-let str4 = Number(str3);
-console.log(str4 + " - " + typeof str4); // Number
+// let str4 = Number(str3);
+// console.log(str4 + " - " + typeof str4); // Number
 
-let apples = "2";
-let oranges = "5";
+// let apples = "2";
+// let oranges = "5";
 
-console.log(+apples + +oranges); // toNumber
-console.log(Number(apples) + Number(oranges));
+// console.log(+apples + +oranges); // toNumber
+// console.log(Number(apples) + Number(oranges));
 
-let counter = 3;
-console.log(counter++); // postfix increment
-console.log(counter);
+// let counter = 3;
+// console.log(counter++); // postfix increment
+// console.log(counter);
 
-console.log(--counter); // postfix decrement
-console.log(counter);
+// console.log(--counter); // postfix decrement
+// console.log(counter);
 
 
-///////////////////////////////////////
-
+// /************Basic operators************/
 
 // console.log("" + 1 + 0);
-// console.log("" - 1 + 5);
+// console.log("" - 1 + 0);
 // console.log(true + false);
 // console.log(6 / "3");
 // console.log("2" * "3");
@@ -106,23 +105,40 @@ console.log(counter);
 // console.log(undefined + 1);
 // console.log(" \t \n" - 2);
 
-// console.log(+"\n0\n" + " - is a " + typeof(+"\n0\n"));
+// let a = +"\n0\t";
+// console.log(a + " - is a " + typeof(a));
 
 
-///////////////////////////////////////
+/************Logical operators************/
+console.log( 1 || 0 );
+console.log( true || 'no matter what' );
+console.log( null || 1 );
+console.log( 0 || 1 || undefined);
+console.log( undefined || 0 || null);
 
 
-// let askNumber = prompt("Type a number, pls", '');
+// /************Ternary operator************/
 
-// console.log(askNumber);
+// let getNumber = prompt("Type a number", '');
+// console.log(getNumber);
 
-// askNumber == null ? console.log(`Stupid son of a bitch. If you want to continue, type a number, retard.`) : askNumber >=0 ? console.log(`I've got your number! It's ${askNumber}!`) : console.log(`Are you retarded? I asked you to type a number and you typed '${askNumber}'??`);
+// getNumber === null || getNumber === undefined ?
+// console.log(`Aborted`) :
+
+// getNumber === "" || isNaN(+getNumber) ?
+// console.log(`"${getNumber}" - not a number. Try again!`) :
+
+// console.log(`I've got your number! It's ${getNumber}`);
 
 
-// if (isNumber > 0){
-// 	console.log(1);
-// } else if (isNumber === 0){
-// 	console.log(0);
+// /************Loop "If Else************/
+
+// let year = prompt('What year is ECMAScript-2015?', '');
+
+// if (year < 2015) {
+//   console.log( 'Too early...' );
+// } else if (year > 2015) {
+//   console.log( 'Too late' );
 // } else {
-// 	console.log(-1);
-// };
+//   console.log( 'Bingo!' );
+// }
