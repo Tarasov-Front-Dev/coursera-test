@@ -110,11 +110,32 @@
 
 
 /************Logical operators************/
-console.log( 1 || 0 );
-console.log( true || 'no matter what' );
-console.log( null || 1 );
-console.log( 0 || 1 || undefined);
-console.log( undefined || 0 || null);
+// console.log( console.log(1) && console.log(2) ); // 1 and then undefined
+// console.log( null || 2 && 3 || 4 ); // 3
+
+
+// let getUserName = prompt("Login?", "");
+// let getPassword;
+
+// if (getUserName === "admin") {
+
+// 	getPassword = (prompt("Password?", ""));
+
+// 	if (getPassword === "boss") {
+// 		console.log(`Hello ${getUserName}!`);
+// 	} else if (getPassword === null || getPassword === "") {
+// 		console.log("Aborted");
+// 	} else {
+// 		console.log("Wrong password");
+// 	}
+	
+// } else if (getUserName === null || getUserName === "") {
+// 	console.log("Aborted");
+// 	} else {
+// 		console.log("Wrong login");
+// }
+
+// alert( alert(1) && alert(2) ); // 1 and then undefined
 
 
 // /************Ternary operator************/
