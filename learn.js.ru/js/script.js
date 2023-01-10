@@ -37,7 +37,7 @@
 
 // //Модальное окно с вопросом + модальное окно с сообщением
 // let isMan = confirm('Are you the man?');
-// if (isMan == true){
+// if (isMan){
 // 	alert('You are the man!');
 // } else {
 // 		alert('Go and be the man!');
@@ -203,18 +203,56 @@
 
 // /*********Switch*********/
 
-let getBrowserName = prompt("What's your browser?", "");
+// let getBrowserName = prompt("What's your browser?", "");
 
-switch(getBrowserName){
-	case "Edge":
-		console.log("You've got the Edge!");
-		break;
-	case "Chrome":
-	case "Mozilla":
-	case "Safari":
-	case "Opera":
-		console.log("Ok we support these browsers too");
-		break;
-	default:
-		console.log("We hope this page looks ok!");
+// switch(getBrowserName){
+// 	case "Edge":
+// 		console.log("You've got the Edge!");
+// 		break;
+// 	case "Chrome":
+// 	case "Mozilla":
+// 	case "Safari":
+// 	case "Opera":
+// 		console.log("Ok we support these browsers too");
+// 		break;
+// 	default:
+// 		console.log("We hope this page looks ok!");
+// }
+
+
+// /*********Functions*********/
+
+function checkAge(age) {
+	if (age >= 18) {
+		return true;
+	} else {
+		return confirm("Ask parents");
+	}
 }
+
+let age = +prompt("What's your age?", "");
+if (checkAge(age)) {
+	console.log("Access granted!");
+} else {
+	console.log("Access denied");
+}
+
+
+// /*********isPrime by functions*********/
+
+function showPrimes(n) {
+	for (let i = 2; i < n; i++){ // count all numbers towards n
+		if (!isPrime(i)) continue;
+		console.log(i); // isPrime
+	}
+}
+
+function isPrime(n) {
+	for (let i = 2; i < n; i++){ // count all dividers
+		if (n % i === 0) return false; // check for not primes
+	}
+	return true;
+}
+
+let maxPrime = +prompt("Set max number to prime", "");
+showPrimes(maxPrime);
