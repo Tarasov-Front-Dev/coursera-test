@@ -173,29 +173,48 @@
 
 
 // /*********Loop While, If, For + continue/break*********/
-let sum = 0;
+// let sum = 0;
 
-while (true) {
-	let value = prompt("Type a number to summ. Push 'Cancel' to stop", "");
-	if (value === null) break;
-	if (value === undefined || isNaN(value) || value === ""){
-		alert(`"${value}" is not a number! Try again.`);
-		continue;
-	};
-	sum += +value;
-}
-console.log(`Your sum is ${sum}.`);
+// while (true) {
+// 	let value = prompt("Type a number to summ. Push 'Cancel' to stop", "");
+// 	if (value === null) break;
+// 	if (value === undefined || isNaN(value) || value === ""){
+// 		alert(`"${value}" is not a number! Try again.`);
+// 		continue;
+// 	};
+// 	sum += +value;
+// }
+// console.log(`Your sum is ${sum}.`);
 
-// /*********GetPrimes*********/
+// // /*********GetPrimes*********/
 
-let maxPrime = prompt("Set max number to prime", "");
-console.log("Here is all primes toward " + maxPrime + ":");
+// let maxPrime = +prompt("Set max number to prime", "");
+// console.log("Here is all primes toward " + maxPrime + ":");
 
-label: for (let i = 2; i < maxPrime; i++){
-	for (let j = 2; j < i; j++){
-		if (i % j === 0) {
-			continue label;
-		}
-	}
-	console.log(i);
+// label: for (let i = 2; i < maxPrime; i++){
+// 	for (let j = 2; j < i; j++){
+// 		if (i % j === 0) {
+// 			continue label;
+// 		}
+// 	}
+// 	console.log(i);
+// }
+
+
+// /*********Switch*********/
+
+let getBrowserName = prompt("What's your browser?", "");
+
+switch(getBrowserName){
+	case "Edge":
+		console.log("You've got the Edge!");
+		break;
+	case "Chrome":
+	case "Mozilla":
+	case "Safari":
+	case "Opera":
+		console.log("Ok we support these browsers too");
+		break;
+	default:
+		console.log("We hope this page looks ok!");
 }
