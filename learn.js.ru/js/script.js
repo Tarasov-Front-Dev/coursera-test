@@ -280,25 +280,36 @@
 
 // /*********Callback Functions*********/
 
-const ask = function (question, yes, no){
-	if (confirm(question)) yes()
-	else no();
-};
+// const ask = function (question, yes, no){
+// 	if (confirm(question)) yes()
+// 	else no();
+// };
 
-let userQuestion = prompt("What's your question?", "");
-if (userQuestion) {
-	ask(
-		userQuestion,
-		function () {console.log("You agreed!")},
-		function () {console.log("You declined!")}
-	);
-} else console.log("Aborted");
+// let userQuestion = prompt("What's your question?", "");
+// if (userQuestion) {
+// 	ask(
+// 		userQuestion,
+// 		function () {console.log("You agreed!")},
+// 		function () {console.log("You declined!")}
+// 	);
+// } else console.log("Aborted");
 
+
+// const age = prompt("How old are you?", "");
+
+// const showGreeting = (age < 18) ?
+// 	function () {console.log("Hi!")} :
+// 	function () {console.log("Hello!")};
+
+// showGreeting();
+
+
+// /*********Arrow Functions*********/
 
 const age = prompt("How old are you?", "");
 
 const showGreeting = (age < 18) ?
-	function () {console.log("Hi!")} :
-	function () {console.log("Hello!")};
+() => console.log("Hi!") :
+() => console.log("Hello!");
 
 showGreeting();
