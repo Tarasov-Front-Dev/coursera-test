@@ -40,14 +40,40 @@
 
 
 // /************"In" to check values in object************/
+// const user = {
+// 	name: "Tolya",
+// 	age: 33,
+// };
+
+// const rights = "admin";
+// user[rights] = true;
+
+// console.log("name" in user);
+// console.log("admin" in user);
+// console.log(user.name + " is " + rights);
+
+
+// /************"For..in" in object************/
+
 const user = {
 	name: "Tolya",
 	age: 33,
 };
 
-const rights = "admin";
-user[rights] = true;
+for (let key in user) {
+	console.log(key);
+	console.log(user[key]);
+}
 
-console.log("name" in user);
-console.log("admin" in user);
-console.log(user.name + " is " + rights);
+
+const codes = {
+  "+49": "Германия",
+  "+41": "Швейцария",
+  "+44": "Великобритания",
+  // ..,
+  "+1": "США"
+};
+
+for (let code in codes) {
+  console.log(+code);
+}
