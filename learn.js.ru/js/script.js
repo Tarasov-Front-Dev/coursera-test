@@ -231,34 +231,47 @@
 // }
 
 // /***Or like this***/
-function checkAge(age) {
-	return (age >= 18 || confirm("Ask parents"));
-}
 
-let age = +prompt("What's your age?", "");
+// function checkAge(age) {
+// 	return (age >= 18 || confirm("Ask parents"));
+// }
 
-if (checkAge(age)) {
-	console.log("Access granted!");
-} else {
-	console.log("Access denied");
-}
+// let age = +prompt("What's your age?", "");
+
+// if (checkAge(age)) {
+// 	console.log("Access granted!");
+// } else {
+// 	console.log("Access denied");
+// }
 
 
 // /*********isPrime by functions*********/
 
-function showPrimes(n) {
-	for (let i = 2; i < n; i++){ // count all numbers towards maxPrime
-		if (!isPrime(i)) continue;
-		console.log(i); // isPrime
-	}
-}
+// function showPrimes(n) {
+// 	for (let i = 2; i < n; i++){ // count all numbers towards maxPrime
+// 		if (!isPrime(i)) continue;
+// 		console.log(i); // isPrime
+// 	}
+// }
 
-function isPrime(n) {
-	for (let i = 2; i < n; i++){ // count all dividers
-		if (n % i === 0) return false; // check for not primes
-	}
-	return true;
-}
+// function isPrime(n) {
+// 	for (let i = 2; i < n; i++){ // count all dividers
+// 		if (n % i === 0) return false; // check for not primes
+// 	}
+// 	return true;
+// }
 
-let maxPrime = +prompt("Set max number to prime", "");
-showPrimes(maxPrime);
+// let maxPrime = +prompt("Set max number to prime", "");
+// showPrimes(maxPrime);
+
+
+// /*********Function Expression*********/
+
+let sayHi = function() { // create function expression
+  console.log("Hello " + name + "!");
+};
+
+let name = prompt("What's your name?", "");
+let func = sayHi; // copy function sayHi to variable func.
+
+func(name); // call function
