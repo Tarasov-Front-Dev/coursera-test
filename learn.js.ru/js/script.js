@@ -267,12 +267,38 @@
 
 // /*********Function Expression*********/
 
-let sayHi = function(userName) { // create function expression
-	userName = userName || "Anonim";
-  console.log("Hello " + userName + "!");
+// let sayHi = function(userName) { // create function expression
+// 	userName = userName || "Anonim";
+//   console.log("Hello " + userName + "!");
+// };
+
+// let name = prompt("What's your name?", "");
+// let func = sayHi; // copy function sayHi to variable func.
+
+// func(name); // call function
+
+
+// /*********Callback Functions*********/
+
+const ask = function (question, yes, no){
+	if (confirm(question)) yes()
+	else no();
 };
 
-let name = prompt("What's your name?", "");
-let func = sayHi; // copy function sayHi to variable func.
+let userQuestion = prompt("What's your question?", "");
+if (userQuestion) {
+	ask(
+		userQuestion,
+		function () {console.log("You agreed!")},
+		function () {console.log("You declined!")}
+	);
+} else console.log("Aborted");
 
-func(name); // call function
+
+const age = prompt("How old are you?", "");
+
+const showGreeting = (age < 18) ?
+	function () {console.log("Hi!")} :
+	function () {console.log("Hello!")};
+
+showGreeting();
