@@ -306,10 +306,10 @@
 
 // /*********Arrow Functions*********/
 
-const age = prompt("How old are you?", "");
+// const age = prompt("How old are you?", "");
 
-const showGreeting = (age < 18) ?
-() => console.log("Hi!") :
-() => console.log("Hello!");
+// const showGreeting = (age < 18) ?
+// () => console.log("Hi!") :
+// () => console.log("Hello!");
 
-showGreeting();
+// showGreeting();
