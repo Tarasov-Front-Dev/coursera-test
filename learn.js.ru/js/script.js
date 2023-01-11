@@ -267,8 +267,9 @@
 
 // /*********Function Expression*********/
 
-let sayHi = function() { // create function expression
-  console.log("Hello " + name + "!");
+let sayHi = function(userName) { // create function expression
+	userName = userName || "Anonim";
+  console.log("Hello " + userName + "!");
 };
 
 let name = prompt("What's your name?", "");
